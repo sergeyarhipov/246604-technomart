@@ -12,18 +12,12 @@
         <div class="site-logo">
           <a href="#"><img src="img/index-logo.png" width="120" height="35" alt="Интернет магазин Техномарт"></a>
         </div>
-        <div class="site-find">
-          <form><input placeholder="Поиск:"></form>
+        <div class="header-search">
+          <form action="/this" method="POST"><input type="text" placeholder="Поиск:"></form>
         </div>
-        <div class="site-bookmarks">
-          <a href="#">Закладки:0</a>
-        </div>
-        <div class="site-basket-active">
-          <a href="#">Корзина:10</a>
-        </div>
-        <div class="site-order-active">
-          <a href="#">Оформить заказ</a>
-        </div>
+        <a class="favorites-btn" href="#">Закладки:0</a>
+        <a class="basket-btn" href="#">Корзина:10</a>
+        <a class="order-btn" href="#">Оформить заказ</a>
       </div>
 
       <!--Блок информации о компании-->
@@ -73,7 +67,7 @@
         <h1 class="catalog-title">Перфораторы</h1>
         <!--Левая колонка-->
         <aside class="catalog-filters">
-          <form class="form-filters">
+          <form class="form-filters" action="/this" method="POST">
             <h3 class="title-name-filter">Фильтр:</h3>
             <fieldset class="sale">
               <legend>Цена</legend>
