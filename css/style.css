@@ -6,24 +6,10 @@ body {
   font-family: Cuprum, Arial, sans-serif;
 }
 
-.popular-title {
-  font-size: 30px;
-  line-height: 30px;
-  color: #32425c;
-  font-weight: normal;
-}
-
-.title-services {
-  font-size: 21px;
-  line-height: 30px;
-  color: #fff;
+.item-name {
+  font-size: 18px;
+  line-height: 20px;
   font-weight: bold;
-}
-
-.title-about-company {
-  font-size: 30px;
-  line-height: 24px;
-  font-weight: normal;
 }
 
 .catalog-title {
@@ -33,8 +19,14 @@ body {
   font-weight: normal;
 }
 
+.title-about-company {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
 .product-title {
   font-size: 30px;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: normal;
 }
