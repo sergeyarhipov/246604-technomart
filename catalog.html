@@ -10,53 +10,49 @@
     <!--Блок хедера-->
     <header class="main-header">
       <div class="top-header">
-        <div class="header-btns">
-          <div class="conteiner clearfix">
-            <div class="site-logo">
-              <a href="#"><img src="img/header-logo.png" width="220" height="42" alt="Интернет-магазин Техномарт"></a>
-            </div>
-            <div class="header-search">
-              <form action="/this" method="POST"><input type="text" placeholder="Поиск:"></form>
-            </div>
-            <a class="header-btn favorites-btn favorites-btn-active" href="#">Закладки:0</a>
-            <a class="header-btn basket-btn basket-btn-active" href="#">Корзина:10</a>
-            <a class="header-btn order-btn" href="#">Оформить заказ</a>
+        <div class="conteiner header-btns clearfix">
+          <div class="site-logo">
+            <a href="#"><img src="img/header-logo.png" width="220" height="42" alt="Интернет-магазин Техномарт"></a>
           </div>
+          <div class="header-search">
+            <form action="/this" method="POST"><input type="text" placeholder="Поиск:"></form>
+          </div>
+          <a class="header-btn favorites-btn favorites-btn-active" href="#">Закладки:0</a>
+          <a class="header-btn basket-btn basket-btn-active" href="#">Корзина:10</a>
+          <a class="header-btn order-btn" href="#">Оформить заказ</a>
         </div>
 
         <!--Блок информации о компании-->
         <div class="conteiner">
-          <div class="technomart-information">
-            <div class="header-information">
-              <p class="site-name">Интернет магазин<br>строительных материалов<br>и инструментов для ремонта</p>
-              <section class="technomart-contacts">
-                <a href="#">+7 (812) 555-05-55</a>
-                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-              </section>
-              <div class="user-block">
-                <div class="user-control">
-                  <a href="#">Равшан Джамшутович</a>
-                  <a href="#">"Иконка выхода"</a>
-                </div>
-                <ul>
-                  <li><a href="#">Мои заказы</a></li>
-                  <li><a href="#">Личный кабинет</a></li>
-                </ul>
+          <div class="header-information">
+            <p class="site-name">Интернет магазин строительных материалов<br>и инструментов для ремонта</p>
+            <section class="technomart-contacts">
+              <a href="#">+7 (812) 555-05-55</a>
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </section>
+            <div class="user-block">
+              <div class="user-control">
+                <a class="user-name" href="#">Равшан Джамшутович</a>
+                <a class="icon-exit" href="#">"Иконка выхода"</a>
+              </div>
+              <div class="control-links">
+                <a class="control-link" href="#">Мои заказы</a>
+                <a class="control-link" href="#">Личный кабинет</a>
               </div>
             </div>
-            <!--Блок навигации-->
-            <nav class="main-navigation clearfix">
-              <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Компания</a></li>
-                <li><a>Каталог</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Спецпредложения</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-            </nav>
           </div>
+          <!--Блок навигации-->
+          <nav class="main-navigation">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Компания</a></li>
+              <li><a>Каталог</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -77,34 +73,34 @@
         <aside class="catalog-filters">
           <form class="form-filters" action="/this" method="POST">
             <div class="title-filters">Фильтр:</div>
-            <fieldset class="sale">
-              <legend>Цена</legend>
+            <div class="sale">
+              <p class="title-sale">Цена</p>
               <span>"Фильтр по цене"</span>
               <p><input maxlength="25" size="10" value="0"> - </p>
               <p><input maxlength="25" size="10" value="30000"></p>
-            </fieldset>
+            </div>
             <fieldset class="filter">
               <legend>Производители:</legend>
               <div class="filter-checkbox">
-                <input type="checkbox" id="chkbox1" name="filter-checkbox1" value="" checked><label for="chkbox1">BOSCH</label>
+                <input type="checkbox" id="chkbox1" name="filter-checkbox1" value="BOSCH" checked><label for="chkbox1">BOSCH</label>
               </div>
               <div class="filter-checkbox">
-                <input type="checkbox" id="chkbox2" name="filter-checkbox2" value=""><label for="chkbox2">Интерскол</label>
+                <input type="checkbox" id="chkbox2" name="filter-checkbox2" value="Interskol"><label for="chkbox2">Интерскол</label>
               </div>
               <div class="filter-checkbox">
-                <input type="checkbox" id="chkbox3" name="filter-checkbox3" value=""><label for="chkbox3">Makita</label>
+                <input type="checkbox" id="chkbox3" name="filter-checkbox3" value="Makita"><label for="chkbox3">Makita</label>
               </div>
               <div class="filter-checkbox">
-                <input type="checkbox" id="chkbox4" name="filter-checkbox4" value=""><label for="chkbox4">Dewalt</label>
+                <input type="checkbox" id="chkbox4" name="filter-checkbox4" value="Dewalt"><label for="chkbox4">Dewalt</label>
               </div>
               <div class="filter-checkbox">
-                <input type="checkbox" id="chkbox5" name="filter-checkbox5" value=""><label for="chkbox5">Hitachi</label>
+                <input type="checkbox" id="chkbox5" name="filter-checkbox5" value="Hitachi"><label for="chkbox5">Hitachi</label>
               </div>
             </fieldset>
             <fieldset class="filter">
               <legend>Питание:</legend>
-              <input type="radio" id="rd1" name="group-product-item" value="Аккумуляторные"><label for="rd1">Аккумуляторные</label>
-              <input type="radio" id="rd2" name="group-product-item" value="Сетевые"><label for="rd2">Сетевые</label>
+              <input type="radio" id="rd1" name="group-product-item" value="Accumultor"><label for="rd1">Аккумуляторные</label>
+              <input type="radio" id="rd2" name="group-product-item" value="Electric"><label for="rd2">Сетевые</label>
               <button class="btn" type="submit">Показать</button>
             </fieldset>
           </form>
@@ -112,7 +108,7 @@
       </div>
 
       <!--Блок каталога товаров-->
-      <section class="catalog-result">
+      <section class="catalog-result clearfix">
         <div class="sorting-product">
           <div class="title-filter">Сортировка:</div>
           <ul>
@@ -120,14 +116,14 @@
             <li><a href="#">По типу</a></li>
             <li><a href="#">По функционалу</a></li>
           </ul>
-          <div class="sorting-arrow">
+          <div class="sorting-arrows">
             <a class="arrow arrow-up arrow-active" href="#">"Стрелка вверх"</a>
             <a class="arrow arrow-down" href="#">"Стрелка вниз"</a>
           </div>
         </div>
 
         <!--Блоки товаров-->
-        <div class="items">
+        <div class="items clearfix">
           <article class="item">
               <div class="item-btns">
                 <a class="btn-buy" href="#">Купить</a>
@@ -250,9 +246,9 @@
       <div class="product-description">
         <div class="conteiner">
           <h2 class="product-title">Пара слов о перфораторах</h2>
-          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
-          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+          В<br>ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </div>
       </div>
 
@@ -260,7 +256,7 @@
       <footer class="main-footer">
         <div class="footer-top">
           <div class="conteiner">
-            <div class="footer-line">
+            <div class="footer-line  clearfix">
               <div class="footer-logo">
                 <a href="footer-link"><img src="img/footer-logo.png" width="220" height="70" alt="Интернет-магазин Техномарт"></a>
               </div>
@@ -280,8 +276,8 @@
 
         <div class="footer-bottom">
           <div class="conteiner">
-            <div class="footer-line">
-              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+            <div class="footer-line clearfix">
+              <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
               <nav class="catalog-menu">
                 <ul>
                   <li><a href="#">Материалы</a></li>
@@ -294,7 +290,7 @@
           </div>
         </div>
 
-        <div class="conteiner">
+        <div class="conteiner clearfix">
           <p class="footer-copyright">© 2010–2017 Компания «Техномарт» Все права защищены</p>
           <div class="social-btns">
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
@@ -306,12 +302,24 @@
             <a href="#">mail@htmlacademy.ru</a>
           </section>
           <section class="developer">
-            <div>Разработано:</div>
+            <div>Разработано -</div>
             <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
           </section>
         </div>
-
       </footer>
+
+      <form class="index-popup" action="/this" method="POST">
+        <div class="icon-close"></div>
+        <div class="form-title">
+          <div class="add-item">
+            <div class="icon-ok"></div>
+            <p>Товар добавлен в корзину!</p>
+          </div>
+          <div class="popup-bottom">
+            <input type="submit" class="get-item" value="Оформить заказ">
+            <input type="submit" class="cancel-popup" value="Продолжить покупки">
+          </div>
+      </form>
     </div>
 
   </body>
