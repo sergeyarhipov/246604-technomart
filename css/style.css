@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -18,10 +19,14 @@ body {
 }
 
 .catalog-title {
+  width: 436px;
+  margin-bottom: 20px;
+  padding: 37px 0 37px 30px;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 .title-about-company {
@@ -36,7 +41,18 @@ body {
   font-weight: normal;
 }
 
-.header-btns {
+.title-services {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.main-header {
+  margin-bottom: 17px;
+  padding-bottom: 60px;
+}
+
+.top-header {
   margin-bottom: 35px;
   font-size: 17px;
   line-height: 42px;
@@ -88,7 +104,7 @@ body {
 
 .site-name {
   float: left;
-  width: 248px;
+  width: 200px;
   padding-left: 52px;
   font-size: 16px;
   line-height: 23px;
@@ -97,7 +113,12 @@ body {
 .technomart-contacts {
   float: left;
   width: 300px;
-  margin-left: 20px;
+  margin-left: 68px;
+}
+
+.enter-site {
+  float: right;;
+  width: 281px;
 }
 
 .user-block {
@@ -106,20 +127,308 @@ body {
   margin-left: 20px;
 }
 
-.user-block li {
-  display: inline-block;
-  list-style: none;
-}
-
 .main-navigation {
   min-height: 60px; /*Только для оформления сетки*/
   width: 960px;
 }
 
 .main-navigation li {
-  float: left;
+  display: inline-block;
   padding: 0 25px;
   list-style: none;
   font-size: 17px;
   line-height: 60px;
+}
+
+.banners1 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.banner {
+  float: left;
+  margin-left: 20px;
+  width: 300px;
+}
+
+.banner-materials {
+  margin-left: 0;
+}
+
+.promo-title {
+  margin-bottom: 10px;
+  padding-top: 17px;
+  padding-left: 24px;
+  font-size:24px;
+  line-height: 30px;
+}
+
+.promo-link {
+  display: block;
+  width: 135px;
+  margin-left: 30px;
+  margin-bottom: 22px;
+  padding: 11px 0 12px 0;
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.slider {
+  float: left;
+  width: 620px;
+  height: 256px;
+  margin-bottom: 59px;
+}
+
+.banner-discounts {
+  margin-bottom: 22px;
+}
+
+.slider-title {
+  margin-top: 24px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  font-size: 36px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.slider-description {
+  margin-left: 30px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.open-catalog {
+  display: block;
+  width: 196px;
+  margin-left: 30px;
+  padding: 8px 0 8px 0;
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.popular-items {
+  margin-bottom: 20px;
+}
+
+.popular-item {
+  width: 220px;
+  min-height: 318px;
+  float: left;
+  margin-right: 20px;
+}
+
+.popular-item:last-child {
+  margin-right: 0;
+}
+
+.index-title {
+  float: left;
+  width: 436px;
+  margin-bottom: 20px;
+  padding: 30px 0 30px 30px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.btn-title {
+  display: block;
+  float: right;
+  width: 253px;
+  margin-top: 25px;
+  margin-right: 22px;
+  padding: 10px 0 10px 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.item-name {
+  width:165px;
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.supplier {
+  float: left;
+  display: block;
+  width: 220px;
+  margin-right: 20px;
+}
+
+.supplier:nth-child(4) {
+  margin-right: 0;
+}
+
+.supplier:nth-child(8) {
+  margin-right: 0;
+}
+
+.breadcrumbs {
+  margin-bottom: 15px;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  padding-right: 25px;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.catalog-content {
+  float: left;
+  width: 220px;
+}
+
+.sorting-product {
+  float: right;
+  width: 700px;
+}
+
+.title-filter {
+  float:left;
+  width: 160px;
+  padding: 5px 0 5px 20px;
+  text-transform: uppercase;
+}
+
+.sorting-product {
+  margin-bottom: 20px;
+}
+
+.sorting-product li {
+  float: left;
+  padding: 0 20px 0 20px;
+  font-size: 13px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.items {
+  float: right;
+  margin-bottom: 25px;
+  width:700px;
+}
+
+.item {
+  float: left;
+  padding-top: 30px;
+  margin: 0 20px 20px 0;
+  width: 220px;
+  min-height: 290px;
+}
+
+.item:nth-child(3) {
+  margin: 0 0 20px 0;
+}
+
+.item:nth-child(6) {
+  margin: 0 0 20px 0;
+}
+
+.item:nth-child(9) {
+  margin: 0 0 20px 0;
+}
+
+.item-btns {
+  display: none;
+}
+
+.pagination {
+  margin-left: 240px;
+}
+
+.pagination li{
+  display: inline-block;
+  width: 38px;
+  margin-right: 10px;
+  margin-bottom: 60px;
+}
+
+.product-description {
+  padding-top: 75px;
+  padding-bottom: 73px;
+}
+
+.product-title {
+  padding-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.footer-logo {
+  float: left;
+  margin-bottom: 10px;
+  width: 220px;
+}
+
+.footer-menu {
+  float: right;
+  padding-top: 30px;
+}
+
+.footer-menu li {
+  display: inline-block;
+  padding-left: 58px;
+  font-size: 18px;
+}
+
+.footer-adress {
+  float: left;
+  margin-bottom: 46px;
+  width: 350px;
+  font-size: 18px;
+}
+
+.catalog-menu {
+  float: right;
+}
+
+.catalog-menu li {
+  display: inline-block;
+  padding-left: 53px;
+  font-size: 18px;
+}
+
+.footer-copyright {
+  float: left;
+  width: 230px;
+  padding: 42px 0 29px 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.social-btns {
+  float: left;
+  width: 150px;
+  margin-left: 160px;
+  padding-top: 37px;
+}
+
+.communication {
+  float: left;
+  width: 140px;
+  margin-left: 100px;
+  padding-top: 40px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.developer {
+  float: left;
+  margin-left: 40px;
+  padding-top: 40px;
+  font-size: 16px;
+  line-height: 18px;
 }
