@@ -13,6 +13,8 @@ body {
 }
 
 .item-name {
+  width:165px;
+  padding-top: 10px;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -29,21 +31,20 @@ body {
   text-transform: uppercase;
 }
 
-.title-about-company {
+.title-about {
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 24px;
   font-weight: normal;
-}
-
-.product-title {
-  font-size: 30px;
-  line-height: 24px;
-  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .title-services {
+  margin-top: 64px;
+  margin-bottom: 30px;
   font-size: 30px;
   line-height: 24px;
+  text-transform: uppercase;
   font-weight: normal;
 }
 
@@ -253,10 +254,11 @@ body {
 }
 
 .item-name {
-  width:165px;
-  padding-top: 10px;
-  font-size: 18px;
-  line-height: 20px;
+
+}
+
+.suppliers {
+  margin-bottom: 80px;
 }
 
 .supplier {
@@ -268,10 +270,110 @@ body {
 
 .supplier:nth-child(4) {
   margin-right: 0;
+  margin-bottom: 17px;
 }
 
 .supplier:nth-child(8) {
   margin-right: 0;
+}
+
+.about-magazine {
+  width: 360px;
+  margin-bottom: 70px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.btn-services {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.btn-delivery, .btn-guarantee, .btn-credit {
+  width: 240px;
+  min-height: 62px;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.services-delivery {
+  float: left;
+  padding-bottom: 102px;
+}
+
+.title-service {
+  margin-bottom: 34px;
+  font-size: 36px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.about-company {
+  padding-top: 110px;
+}
+
+.about-technomart {
+  float: left;
+  width: 510px;
+}
+
+.title-about-text1 {
+  margin-bottom: 27px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.title-about-text2 {
+  width: 400px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.transport-companies li{
+  margin-bottom: 27px;
+  list-style: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.contacts {
+  float: right;
+  width: 310px;
+}
+
+.title-about-text3 {
+  width: 200px;
+  margin-bottom: 35px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.btn-about-company {
+  display: block;
+  width: 220px;
+  margin-bottom: 93px;
+  padding: 8px 0 8px 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts img {
+  margin-bottom: 35px;
+}
+
+.btn-map {
+  display: block;
+  width: 300px;
+  margin-bottom: 93px;
+  padding: 8px 0 8px 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .breadcrumbs {
@@ -364,6 +466,9 @@ body {
 
 .product-title {
   padding-bottom: 32px;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
