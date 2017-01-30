@@ -10,7 +10,7 @@
     <!--Блок хедера-->
     <header class="main-header">
       <div class="top-header">
-        <div class="conteiner header-btns clearfix">
+        <div class="conteiner clearfix">
           <div class="site-logo">
             <a href="#"><img src="img/header-logo.png" width="220" height="42" alt="Интернет-магазин Техномарт"></a>
           </div>
@@ -21,50 +21,57 @@
           <a class="header-btn basket-btn basket-btn-active" href="#">Корзина:10</a>
           <a class="header-btn order-btn" href="#">Оформить заказ</a>
         </div>
-        
-        <!--Блок информации о компании-->
-        <div class="conteiner">
-          <div class="header-information">
-            <p class="site-name">Интернет магазин строительных материалов<br>и инструментов для ремонта</p>
-            <section class="technomart-contacts">
-              <a href="#">+7 (812) 555-05-55</a>
-              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            </section>
-            <div class="user-block">
-              <a href="#">"Войти"</a>
-              <a href="#">""Регистрация"</a>
+      </div>
+
+      <!--Блок информации о компании-->
+      <div class="conteiner">
+        <div class="header-information">
+          <p class="site-name">Интернет магазин строительных материалов<br>и инструментов для ремонта</p>
+          <section class="technomart-contacts">
+            <a href="#">+7 (812) 555-05-55</a>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </section>
+          <div class="user-block">
+            <div class="user-control">
+              <a class="user-name" href="#">Равшан Джамшутович</a>
+              <a class="icon-exit" href="#">"Иконка выхода"</a>
+            </div>
+            <div class="control-links">
+              <a class="control-link" href="#">Мои заказы</a>
+              <a class="control-link" href="#">Личный кабинет</a>
             </div>
           </div>
-
-          <!--Блок навигации-->
-          <nav class="main-navigation">
-            <ul>
-              <li><a>Главная</a></li>
-              <li><a href="#">Компания</a></li>
-              <li><a href="#">Каталог</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Спецпредложения</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
         </div>
+        <!--Блок навигации-->
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><a>Каталог</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <div class="conteiner">
-    <!--Промо-блоки-->
-      <div class="banner banner-materials">
-        <div class="promo-title">Материалы</div>
-        <a href="#">На любой вкус</a>
-      </div>
-      <div class="banner banner-instruments">
-        <div class="promo-title">Инструменты</div>
-        <a href="#">На все случаи жизни</a>
-      </div>
-      <div class="banner banner-construction">
-        <div class="promo-title">Техника</div>
-        <a href="#">Для стройки</a>
+      <!--Промо-блоки-->
+      <div class="banners1">
+        <div class="banner banner-materials">
+          <div class="promo-title">Материалы</div>
+          <a href="#">На любой вкус</a>
+        </div>
+        <div class="banner banner-instruments">
+          <div class="promo-title">Инструменты</div>
+          <a href="#">На все случаи жизни</a>
+        </div>
+        <div class="banner banner-construction">
+          <div class="promo-title">Техника</div>
+          <a href="#">Для стройки</a>
+        </div>
       </div>
 
       <!--Блок галереи-->
@@ -81,7 +88,7 @@
         <button class="btn-slider-next" type="button"></button>
         <a class="open-catalog" href="#">Открыть каталог</a>
       </div>
-      <div class="banners">
+      <div class="banners2">
         <div class="banner banner-discounts">
           <div class="promo-title">Скидки 50%</div>
           <a href="#">На 350 товаров</a>
@@ -93,10 +100,10 @@
       </div>
 
       <!--Блок популярных товаров-->
-      <section class="popular-item">
-        <div class="popular-product-header">
-          <h2 class="catalog-title">Популярные товары</h2>
-          <a class="btn-company" href="#">Все популярные товары</a>
+      <section class="popular-items">
+        <div class="popular-header">
+          <h2 class="popular-title">Популярные товары</h2>
+          <a class="btn" href="#">Все популярные товары</a>
         </div>
         <article class="item">
           <div class="item-btns">
@@ -149,10 +156,10 @@
       </section>
 
       <!--Блок популярных производителей-->
-      <section class="popular-firm">
-        <div class="popular-firm-header">
+      <section class="popular-header">
+        <div class="popular-suppliers">
           <h2 class="catalog-title">Популярные производители</h2>
-          <a class="btn-company" href="#">Все производители</a>
+          <a class="btn" href="#">Все производители</a>
         </div>
         <div class="suppliers">
           <a class="supplier" href="#"><img src="img/popular-firm1.jpg" width="218" height="144" alt="Популярная фирма"></a>
@@ -218,7 +225,7 @@
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
-            <li><a class="btn-company" href="#">Подробнее о комании</a></li>
+            <li><a class="btn" href="#">Подробнее о комании</a></li>
           </ul>
         </div>
 
@@ -226,7 +233,7 @@
           <h2 class="title-about-company">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <img src="img/map.jpg" width="250" height="150" alt="Техномарт на карте">
-          <a class="btn-company" href="#">Заблудились? Напишите нам</a>
+          <a class="btn" href="#">Заблудились? Напишите нам</a>
         </div>
       </div>
     </div>
@@ -251,9 +258,7 @@
             </nav>
           </div>
         </div>
-      </div>
 
-      <div class="footer-bottom">
         <div class="conteiner">
           <div class="footer-line clearfix">
             <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
@@ -269,45 +274,47 @@
         </div>
       </div>
 
-      <div class="conteiner clearfix">
-        <p class="footer-copyright">© 2010–2017 Компания «Техномарт» Все права защищены</p>
-        <div class="social-btns">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      <div class="footer-bottom">
+        <div class="conteiner clearfix">
+          <p class="footer-copyright">© 2010–2017 Компания «Техномарт» Все права защищены</p>
+          <div class="social-btns">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </div>
+          <section class="communication">
+            <div>Обратная связь:</div>
+            <a href="#">mail@htmlacademy.ru</a>
+          </section>
+          <section class="developer">
+            <div>Разработано -</div>
+            <a class="btn-link" href="https://htmlacademy.ru">htmlacademy.ru</a>
+          </section>
         </div>
-        <section class="communication">
-          <div>Обратная связь:</div>
-          <a href="#">mail@htmlacademy.ru</a>
-        </section>
-        <section class="developer">
-          <div>Разработано -</div>
-          <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
-        </section>
       </div>
 
     </footer>
 
-    <form class="index-popup" action="/this" method="POST">
-      <div class="icon-close"></div>
-      <div class="contacts">
-        <div class="contact-name">
-          <label>Ваше имя:</label>
-          <input type="text" placeholder="Представьтесь, пожалуйста">
+    <!--Popup-->
+    <div class="popup">
+      <form class="index-popup" action="/this" method="POST">
+        <div class="icon-close"></div>
+        <div class="contacts">
+          <div class="contact-name">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="contact-email">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" id="email" placeholder="Для отправки ответа">
+          </div>
+          <div class="textarea">
+            <label for="textarea">Текст письма:</label>
+            <textarea id="textarea" placeholder="В свободной форме" rows="1" cols="52"></textarea>
+          </div>
         </div>
-        <div class="contact-email">
-          <label>Ваш e-mail:</label>
-          <input type="email" placeholder="Для отправки ответа">
-        </div>
-        <div class="textarea">
-          <label>Текст письма:</label>
-          <textarea placeholder="В свободной форме" rows="1" cols="52"></textarea>
-        </div>
-      </div>
-      <div class="form-popup-bottom">
-        <input type="submit" name="send-form" class="send-form" value="Отправить">
-        <input type="submit" name="cancel-form" class="cancel-form" value="Отмена">
-      </div>
-    </form>
+        <button type="submit" name="send-form" class="send-form" value="send">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
