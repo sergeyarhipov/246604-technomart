@@ -23,7 +23,7 @@ body {
 .catalog-title {
   width: 436px;
   margin-bottom: 20px;
-  padding: 37px 0 37px 30px;
+  padding: 30px 0 30px 30px;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -49,8 +49,8 @@ body {
 }
 
 .main-header {
-  margin-bottom: 17px;
-  padding-bottom: 60px;
+  margin-bottom: 20px;
+  padding-bottom: 65px;
 }
 
 .top-header {
@@ -100,7 +100,7 @@ body {
 }
 
 .header-information {
-  min-height: 110px; /*Только для оформления сетки*/
+  padding-bottom: 37px;
 }
 
 .site-name {
@@ -131,12 +131,16 @@ body {
 .main-navigation {
   min-height: 60px; /*Только для оформления сетки*/
   width: 960px;
+  font-size: 0;
 }
 
 .main-navigation li {
   display: inline-block;
-  padding: 0 25px;
   list-style: none;
+}
+
+.main-navigation a {
+  padding: 0 25px;
   font-size: 17px;
   line-height: 60px;
 }
@@ -378,12 +382,13 @@ body {
 
 .breadcrumbs {
   margin-bottom: 15px;
+  font-size: 0;
 }
 
 .breadcrumbs li {
   display: inline-block;
   padding-right: 25px;
-  font-size: 13px;
+  font-size: 13px;;
   line-height: 18px;
   text-transform: uppercase;
   list-style: none;
@@ -397,6 +402,7 @@ body {
 .sorting-product {
   float: right;
   width: 700px;
+  font-size: 0;
 }
 
 .title-filter {
@@ -404,6 +410,10 @@ body {
   width: 160px;
   padding: 5px 0 5px 20px;
   text-transform: uppercase;
+}
+
+.sorting {
+  display: inline-block;
 }
 
 .sorting-product {
@@ -448,19 +458,25 @@ body {
   display: none;
 }
 
+.catalog-result {
+  margin-bottom: 13px;
+}
+
 .pagination {
   margin-left: 240px;
 }
 
 .pagination li{
-  display: inline-block;
+  display: block;
+  float: left;
   width: 38px;
   margin-right: 10px;
   margin-bottom: 60px;
+  list-style: none;
 }
 
 .product-description {
-  padding-top: 75px;
+  padding-top: 80px;
   padding-bottom: 73px;
 }
 
@@ -481,6 +497,7 @@ body {
 .footer-menu {
   float: right;
   padding-top: 30px;
+  font-size: 0;
 }
 
 .footer-menu li {
@@ -489,7 +506,7 @@ body {
   font-size: 18px;
 }
 
-.footer-adress {
+.footer-address {
   float: left;
   margin-bottom: 46px;
   width: 350px;
@@ -498,6 +515,10 @@ body {
 
 .catalog-menu {
   float: right;
+}
+
+.footer-line {
+  font-size: 0;
 }
 
 .catalog-menu li {
