@@ -496,6 +496,7 @@ body {
 
 .footer-menu {
   float: right;
+  width: 604px;
   padding-top: 30px;
   font-size: 0;
 }
@@ -515,6 +516,7 @@ body {
 
 .catalog-menu {
   float: right;
+  width: 573px;
 }
 
 .footer-line {
