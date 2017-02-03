@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -32,8 +35,8 @@
             <p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </section>
           <div class="enter-site">
-            <a class="control-link" href="#">Войти</a>
-            <a class="control-link" href="#">Регистрация</a>
+            <a class="enter-link" href="#">Войти</a>
+            <a class="registration-link" href="#">Регистрация</a>
           </div>
         </div>
         <!--Блок навигации-->
@@ -107,7 +110,7 @@
           <div class="item-image">
             <img src="img/popular-item1.jpg" width="216" height="162" alt="Товар">
           </div>
-          <h1 class="item-name">Перфоратор "BOSCH BFG 9000"</h1>
+          <h1 class="item-name">Перфоратор BOSCH BFG 9000</h1>
           <b class="price-item">32500 Р.</b>
           <b class="sale-price">25500 Р.</b>
         </article>
@@ -119,7 +122,7 @@
           <div class="item-image">
             <img src="img/popular-item2.jpg" width="216" height="162" alt="Товар">
           </div>
-          <h1 class="item-name">Перфоратор "BOSCH BFG 3000"</h1>
+          <h1 class="item-name">Перфоратор BOSCH BFG 3000</h1>
           <b class="price-item">22500 Р.</b>
           <b class="sale-price">15500 Р.</b>
         </article>
@@ -131,7 +134,7 @@
           <div class="item-image">
             <img src="img/popular-item3.jpg" width="216" height="162" alt="Товар">
           </div>
-          <h1 class="item-name">Перфоратор "BOSCH BFG 6000"</h1>
+          <h1 class="item-name">Перфоратор BOSCH BFG 6000</h1>
           <b class="price-item">30500 Р.</b>
           <b class="sale-price">25500 Р.</b>
         </article>
@@ -142,9 +145,9 @@
           </div>
           <div class="item-image">
             <img src="img/popular-item4.jpg" width="216" height="162" alt="Товар">
-            <section class="item-new">New</section>
+            <!--<section class="item-new">New</section>-->
           </div>
-          <h1 class="item-name">Перфоратор "BOSCH BFG 2000"</h1>
+          <h1 class="item-name">Перфоратор BOSCH BFG 2000</h1>
           <b class="sale-price">12500 Р.</b>
         </article>
       </section>
@@ -152,7 +155,7 @@
       <!--Блок популярных производителей-->
       <section class="popular-suppliers">
         <div class="popular-header clearfix">
-          <h2 class="index-title">Популярные производители</h2>
+          <h2 class="index-title">Популярные производители:</h2>
           <a class="btn-title" href="#">Все производители</a>
         </div>
         <div class="suppliers clearfix">
@@ -177,13 +180,13 @@
             ваши покупки приятными</p>
         </div>
         <div class="btn-services">
-          <button class="btn-delivery" type="button">Доставка</button>
-          <button class="btn-guarantee" type="button">Гарантия</button>
-          <button class="btn-credit" type="button">Кредит</button>
+          <a class="btn-delivery btn-services-active" href="#">Доставка</a>
+          <a class="btn-guarantee" href="#">Гарантия</a>
+          <a class="btn-credit" href="#">Кредит</a>
         </div>
         <div class="services-delivery">
           <div class="title-service">Доставка</div>
-          <p class="gallery-text">Мы с удовольствием доставим ваш товар прямо к подъезду <br>совершенно бесплатно!<br>
+          <p class="gallery-text">Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно!<br>
           Ведь мы не плохо заработаем, <br>поднимая его на ваш этаж!</p>
         </div>
         <!--<div class="services-delivery">
@@ -209,7 +212,7 @@
     <div class="about-company">
       <div class="container clearfix">
         <div class="about-technomart">
-          <h2 class="title-about">Компания Техномарт</h2>
+          <h2 class="title-about">Компания "Техномарт"</h2>
           <p class="title-about-text1">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
           для ремонта и строительства не оставит равнодушными любителей сэкномить
           на гастарбайтерах.</p>
@@ -219,15 +222,15 @@
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
-            <li><a class="btn btn-about-company" href="#">Подробнее о комании</a></li>
           </ul>
+          <a class="btn btn-about-company" href="#">Подробнее о комании</a>
         </div>
 
         <div class="contacts">
           <h2 class="title-about">Контакты</h2>
           <p class="title-about-text3">Вы можете забрать товар сами, заехав в наш офис:</p>
-          <img src="img/map.jpg" width="250" height="150" alt="Техномарт на карте">
-          <a class="btn btn-map" href="#">Заблудились? Напишите нам</a>
+          <img src="img/map.jpg" width="300" height="158" alt="Техномарт на карте">
+          <a class="btn btn-map" href="#">Заблудились? Напишите нам!</a>
         </div>
       </div>
     </div>

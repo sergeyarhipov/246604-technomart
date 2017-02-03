@@ -16,11 +16,13 @@ a {
 }
 
 .item-name {
+  display: inline-block;
   width:165px;
-  padding-top: 10px;
+  margin: 0 0 12px 0;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
+  text-align: center;
 }
 
 .catalog-title {
@@ -34,8 +36,12 @@ a {
   background-color: #f2f6f8;
 }
 
+.services {
+  background-color: #f2f6f8;
+}
+
 .title-about {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-size: 30px;
   line-height: 24px;
   font-weight: normal;
@@ -43,8 +49,8 @@ a {
 }
 
 .title-services {
-  margin-top: 64px;
-  margin-bottom: 30px;
+  padding-top: 68px;
+  padding-bottom: 27px;
   font-size: 30px;
   line-height: 24px;
   text-transform: uppercase;
@@ -87,7 +93,15 @@ a {
 .header-search {
   float: left;
   width: 140px;
-  padding-left: 50px;
+  padding-left: 48px;
+}
+
+.header-search input{
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #293449;
+  border: 0;
 }
 
 .header-btn {
@@ -101,13 +115,17 @@ a {
 .favorites-btn {
   width: 115px;
   margin-left: 70px;
-  padding-left: 35px;
+  padding-left: 37px;
 }
 
 .basket-btn {
   width: 123px;
   margin-left: 9px;
   padding-left: 27px;
+}
+
+.order-btn {
+  background-color: #63a63e;
 }
 
 .header-information {
@@ -153,6 +171,24 @@ a {
   width: 281px;
 }
 
+.enter-link, .registration-link {
+  float: left;
+  display: block;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000;
+  background-color: #fbfcfd;
+}
+
+.enter-link {
+  padding: 11px 25px 11px 46px;
+}
+
+.registration-link {
+  margin-left: 10px;
+  padding: 11px 25px 11px 25px;
+}
+
 .user-block {
   float: left;
   width: 300px;
@@ -196,7 +232,7 @@ a {
 }
 
 .main-navigation ul {
-  margin-left: 52px;
+  margin-left: 21px;
 }
 
 .main-navigation li {
@@ -204,8 +240,9 @@ a {
   list-style: none;
 }
 
+
 .main-navigation a {
-  margin-right: 58px;
+  padding: 22px 31px 26px 31px;
   font-size: 17px;
   line-height: 60px;
   color: #fff;
@@ -223,17 +260,17 @@ a {
 }
 
 .banner-materials {
-  background-color: #f6b22d;
+  background: #f6b22d url(../img/icon-promo-materials.png) no-repeat right 41px center;
 }
 
 .banner-instruments {
   margin-left: 0;
-  background-color: #4aafde;
+  background: #4aafde url(../img/icon-promo-instruments.png) no-repeat right 28px center;
 }
 
 .banner-construction {
   margin-right: 0;
-  background-color: #cc79d1;
+  background: #cc79d1 url(../img/icon-promo-construction.png) no-repeat right 30px center;
 }
 
 .promo-title {
@@ -272,25 +309,26 @@ a {
 .banner-discounts {
   margin-right: 0;
   margin-bottom: 22px;
-  background-color: #85d179;
+  background: #85d179 url(../img/icon-promo-discaunts.png) no-repeat right 44px center;;
 }
 
 .banner-delivery {
   margin-right: 0;
-  background-color: #f6b22d;
+  background: #f6b22d url(../img/icon-promo-delivery.png) no-repeat right 30px center;;
 }
 
 .slider-title {
-  margin-top: 24px;
+  margin-top: 27px;
   margin-bottom: 5px;
-  margin-left: 30px;
+  margin-left: 24px;
   font-size: 36px;
+  font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .slider-description {
-  margin-left: 30px;
+  margin-left: 24px;
   font-size: 18px;
   line-height: 24px;
 }
@@ -316,14 +354,25 @@ a {
 }
 
 .popular-item {
-  width: 220px;
-  min-height: 318px;
+  width: 218px;
   float: left;
   margin-right: 20px;
+  font-size: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-align: center;
+  border: 1px solid #e5e5e5;
 }
 
 .popular-item:last-child {
   margin-right: 0;
+}
+
+.popular-item:last-child .item-name {
+  margin-bottom: 40px;
+}
+
+.item-image {
+  margin-bottom: 5px;
 }
 
 .index-title {
@@ -349,37 +398,31 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+  background-color: #ee3643;
   border-radius: 5px;
-  background-color: #ee3643
-}
-
-.item-name {
-
 }
 
 .suppliers {
-  margin-bottom: 80px;
+  margin-bottom: 67px;
 }
 
 .supplier {
   float: left;
   display: block;
-  width: 220px;
-  margin-right: 20px;
+  width: 218px;
+  height: 144px;
+  margin-right: 22px;
 }
 
-.supplier:nth-child(4) {
+.supplier:nth-child(4n) {
   margin-right: 0;
-  margin-bottom: 17px;
-}
-
-.supplier:nth-child(8) {
-  margin-right: 0;
+  margin-bottom: 20px;
 }
 
 .about-magazine {
-  width: 360px;
+  width: 400px;
   margin-bottom: 70px;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -388,13 +431,23 @@ a {
   float: left;
   width: 240px;
   margin-right: 80px;
+  padding-bottom: 104px;
 }
 
 .btn-delivery, .btn-guarantee, .btn-credit {
-  width: 240px;
-  min-height: 62px;
+  display: block;
+  padding: 15px 0 15px 23px;
+  width: 217px;
   font-size: 21px;
+  font-weight: bold;
   line-height: 30px;
+  color: #fff;
+  background-color: #32425c;
+}
+
+.btn-services-active {
+  color: #32425c;
+  background-color: #fff;
 }
 
 .services-delivery {
@@ -403,49 +456,66 @@ a {
 }
 
 .title-service {
-  margin-bottom: 34px;
+  margin-top: 5px;
+  margin-bottom: 30px;
   font-size: 36px;
   line-height: 24px;
   text-transform: uppercase;
+  color: #32425c;
+}
+
+.gallery-text {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .about-company {
-  padding-top: 110px;
+  margin-bottom: 87px;
+  padding-top: 83px;
 }
 
 .about-technomart {
   float: left;
-  width: 510px;
+  width: 540px;
 }
 
 .title-about-text1 {
-  margin-bottom: 27px;
+  margin-bottom: 25px;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
 .title-about-text2 {
   width: 400px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
 .transport-companies li{
-  margin-bottom: 27px;
+  margin-bottom: 20px;
+  padding-left: 37px;
   list-style: none;
   font-size: 18px;
   line-height: 20px;
 }
 
+.transport-companies {
+  margin-bottom: 38px;
+}
+
 .contacts {
-  float: right;
-  width: 310px;
+  float: left;
+  margin-left: 100px;
 }
 
 .title-about-text3 {
-  width: 200px;
+  width: 180px;
   margin-bottom: 35px;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -453,27 +523,31 @@ a {
 .btn-about-company {
   display: block;
   width: 220px;
-  margin-bottom: 93px;
-  padding: 8px 0 8px 0;
+  padding: 9px 0 9px 0;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  color: #fff;
+  background-color: #ee3643;
+  border-radius: 5px;
 }
 
 .contacts img {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .btn-map {
   display: block;
   width: 300px;
-  margin-bottom: 93px;
-  padding: 8px 0 8px 0;
+  padding: 9px 0 9px 0;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  color: #fff;
+  background-color: #ee3643;
+  border-radius: 5px;
 }
 
 .breadcrumbs {
@@ -545,20 +619,34 @@ a {
   min-height: 290px;
 }
 
-.item:nth-child(3) {
-  margin: 0 0 20px 0;
-}
-
-.item:nth-child(6) {
-  margin: 0 0 20px 0;
-}
-
-.item:nth-child(9) {
+.item:nth-child(3n) {
   margin: 0 0 20px 0;
 }
 
 .item-btns {
   display: none;
+}
+
+.price-item {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.sale-price {
+  display: block;
+  width: 141px;
+  margin-left: 44px;
+  margin-bottom: 21px;
+  padding: 9px 0 9px 0;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  background-image: url(../img/sale-price.png);
 }
 
 .catalog-result {
@@ -591,23 +679,38 @@ a {
   text-transform: uppercase;
 }
 
+.main-footer {
+  background-color: #32425c;
+}
+
+.footer-top {
+  margin-bottom: 15px;
+}
+
 .footer-logo {
   float: left;
   margin-bottom: 10px;
   width: 220px;
+  height: 70px;
+  background-color: #ee3643;
 }
 
 .footer-menu {
   float: right;
   width: 604px;
-  padding-top: 30px;
+  padding-top: 37px;
   font-size: 0;
 }
 
 .footer-menu li {
   display: inline-block;
   padding-left: 58px;
+}
+
+.footer-menu a {
   font-size: 18px;
+  line-height: 24px;
+  color: #fff;
 }
 
 .footer-address {
@@ -615,6 +718,7 @@ a {
   margin-bottom: 46px;
   width: 350px;
   font-size: 18px;
+  color: #fff;
 }
 
 .catalog-menu {
@@ -628,8 +732,20 @@ a {
 
 .catalog-menu li {
   display: inline-block;
-  padding-left: 53px;
+  padding-left: 52px;
+}
+
+.catalog-menu a {
   font-size: 18px;
+  color: #ffd180;
+}
+
+.footer-bottom {
+  color: #fff;
+}
+
+.footer-bottom a{
+  color: #ffd180;
 }
 
 .footer-copyright {
@@ -658,7 +774,7 @@ a {
 
 .developer {
   float: left;
-  margin-left: 40px;
+  margin-left: 50px;
   padding-top: 40px;
   font-size: 16px;
   line-height: 18px;
