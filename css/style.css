@@ -15,12 +15,17 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  margin: 0;
+}
+
 .item-name {
   display: inline-block;
   width:165px;
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
   font-size: 18px;
   line-height: 20px;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
   text-align: center;
 }
@@ -126,6 +131,10 @@ a {
 
 .order-btn {
   background-color: #63a63e;
+}
+
+.basket-btn-active {
+  background-color: #ee3643;
 }
 
 .header-information {
@@ -358,7 +367,6 @@ a {
   float: left;
   margin-right: 20px;
   font-size: 0;
-  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
   border: 1px solid #e5e5e5;
 }
@@ -378,7 +386,7 @@ a {
 .index-title {
   float: left;
   width: 436px;
-  padding: 30px 0 30px 28px;
+  padding: 30px 0 30px 24px;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -551,21 +559,32 @@ a {
 }
 
 .breadcrumbs {
+  margin-bottom: 10px;
   padding-top: 5px;
-  margin-bottom: 12px;
   font-size: 0;
 }
 
 .breadcrumbs li {
   display: inline-block;
-  padding-right: 25px;
-  font-size: 13px;;
-  line-height: 18px;
-  text-transform: uppercase;
+  margin-left: 18px;
+  padding-left: 23px;
   list-style: none;
 }
 
-.breadcrumbs a {
+.breadcrumbs li:first-child {
+  font-size: 0;
+}
+
+.breadcrumbs li:nth-child(2) {
+  margin-left: 0;
+  padding-left: 13px;
+}
+
+.breadcrumbs a, .active-item {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
   color: #000;
 }
 
@@ -575,21 +594,27 @@ a {
 }
 
 .catalog-filters {
+  width: 220px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
   text-transform: uppercase;
 }
 
 .sorting-product {
   float: right;
-  width: 700px;
+  width: 680px;
+  margin-left: 20px;
   margin-bottom: 20px;
-  padding: 8px 0 8px 20px;
+  padding: 11px 0 11px 20px;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 0;
   background-color: #f7f3ec;
 }
 
-.title-filter {
-  float:left;
-  width: 160px;
+.title-filters {
+  background-color: #f7f3ec;
+  padding: 11px 0 11px 19px;
 }
 
 .sorting {
@@ -613,14 +638,18 @@ a {
 
 .item {
   float: left;
-  padding-top: 30px;
   margin: 0 20px 20px 0;
-  width: 220px;
-  min-height: 290px;
+  width: 218px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
 }
 
 .item:nth-child(3n) {
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
+}
+
+.item:nth-child(3n) .item-name{
+  margin-bottom: 40px;
 }
 
 .item-btns {
@@ -639,18 +668,17 @@ a {
 .sale-price {
   display: block;
   width: 141px;
-  margin-left: 44px;
+  margin-left: 41px;
   margin-bottom: 21px;
   padding: 9px 0 9px 0;
   font-size: 17px;
   line-height: 18px;
-  text-align: center;
   color: #fff;
   background-image: url(../img/sale-price.png);
 }
 
 .catalog-result {
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 
 .pagination {
@@ -666,17 +694,43 @@ a {
   list-style: none;
 }
 
+.pagination li:first-child a{
+  border: 0;
+  color: #fff;
+  background-color: #ee3643;
+}
+
+.pagination li:last-child a {
+  padding: 10px 30px 10px 33px;
+  text-transform: uppercase;
+}
+
+.pagination a {
+  padding: 10px 15px 10px 15px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  color: #000;
+}
+
 .product-description {
-  padding-top: 80px;
-  padding-bottom: 73px;
+  padding-top: 68px;
+  padding-bottom: 68px;
+  background-color: #f5f8fa;
 }
 
 .product-title {
-  padding-bottom: 32px;
+  padding-bottom: 28px;
   font-size: 30px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+.product-description p {
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .main-footer {
