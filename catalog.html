@@ -63,10 +63,10 @@
     <div class="container clearfix">
       <!--Хлебные крошки-->
       <ul class="breadcrumbs">
-        <li><a href="#"></a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li class="active-item">Перфораторы</li>
+        <li><a href="index.html"></a></li>
+        <li><a class="breadcrumbs-link" href="#">Каталог</a></li>
+        <li><a class="breadcrumbs-link" href="#">Инструмент</a></li>
+        <li class="active-item"><a>Перфораторы</a></li>
       </ul>
       <h1 class="catalog-title">Перфораторы</h1>
       <!--Главный блок-->
@@ -75,11 +75,21 @@
         <aside class="catalog-filters">
           <form class="form-filters" action="/this" method="POST">
             <div class="title-filters">Фильтр:</div>
+            <p class="title-sale">Цена</p>
             <div class="sale">
-              <p class="title-sale">Цена</p>
-              <span>"Фильтр по цене"</span>
-              <p><input maxlength="25" size="10" value="0"> - </p>
-              <p><input maxlength="25" size="10" value="30000"></p>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <div class="sale-control">
+                <form action="/this" method="POST">
+                  <p><input name="min-price" type="text" value="0"></p><span>—</span>
+                  <p><input name="min-price" type="text" value="30000"></p>
+                </form>
+              </div>
             </div>
             <fieldset class="filter">
               <legend>Производители:</legend>
@@ -101,9 +111,13 @@
             </fieldset>
             <fieldset class="filter">
               <legend>Питание:</legend>
-              <input type="radio" id="rd1" name="group-product-item" value="Accumultor"><label for="rd1">Аккумуляторные</label>
-              <input type="radio" id="rd2" name="group-product-item" value="Electric"><label for="rd2">Сетевые</label>
-              <button class="btn" type="submit">Показать</button>
+              <div class="filter-radio">
+                <input type="radio" id="rd1" name="group-product-item" value="Accumultor"><label for="rd1">Аккумуляторные</label>
+              </div>
+              <div class="filter-radio">
+                <input type="radio" id="rd2" name="group-product-item" value="Electric"><label for="rd2">Сетевые</label>
+              </div>
+              <button class="btn-filter" type="submit">Показать</button>
             </fieldset>
           </form>
         </aside>
@@ -150,16 +164,15 @@
             <b class="price-item">30500 Р.</b>
             <b class="sale-price">25500 Р.</b>
           </article>
-          <article class="item">
+          <article class="item label-new">
             <div class="item-btns">
               <a class="btn-buy" href="#">Купить</a>
               <a class="btn-favorite" href="#">В закладки</a>
             </div>
             <div class="item-image">
               <img src="img/product-item1.jpg" width="218" height="168" alt="Товар">
-              <!--<section class="item-new">New</section>-->
             </div>
-            <h1 class="item-name">Перфоратор BOSCH BFG 3000</h1>
+            <h1 class="item-name">Перфоратор BOSCH BFG 2000</h1>
             <b class="sale-price">12500 Р.</b>
           </article>
           <article class="item">
@@ -174,7 +187,7 @@
             <b class="price-item">22500 Р.</b>
             <b class="sale-price">15500 Р.</b>
           </article>
-          <article class="item">
+          <article class="item  label-new">
             <div class="item-btns">
               <a class="btn-buy" href="#">Купить</a>
               <a class="btn-favorite" href="#">В закладки</a>
@@ -194,17 +207,16 @@
               </div>
               <img src="img/product-item1.jpg" width="218" height="168" alt="Товар">
             </div>
-            <h1 class="item-name">Перфоратор BOSCH BFG 3000</h1>
+            <h1 class="item-name">Перфоратор BOSCH BFG 2000</h1>
             <b class="sale-price">12500 Р.</b>
           </article>
-          <article class="item">
+          <article class="item  label-new">
             <div class="item-btns">
               <a class="btn-buy" href="#">Купить</a>
               <a class="btn-favorite" href="#">В закладки</a>
             </div>
             <div class="item-image">
               <img src="img/product-item1.jpg" width="218" height="168" alt="Товар">
-              <!--<section class="item-new">New</section>-->
             </div>
             <h1 class="item-name">Перфоратор BOSCH BFG 3000</h1>
             <b class="price-item">22500 Р.</b>
@@ -230,7 +242,7 @@
             <div class="item-image">
               <img src="img/product-item1.jpg" width="218" height="168" alt="Товар">
             </div>
-            <h1 class="item-name">Перфоратор BOSCH BFG 3000</h1>
+            <h1 class="item-name">Перфоратор BOSCH BFG 2000</h1>
             <b class="sale-price">12500 Р.</b>
           </article>
         </div>
@@ -302,7 +314,7 @@
           </section>
           <section class="developer">
             <div>Разработано -</div>
-            <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
+            <a class="btn-link" href="https://htmlacademy.ru">htmlacademy.ru</a>
           </section>
         </div>
       </div>
