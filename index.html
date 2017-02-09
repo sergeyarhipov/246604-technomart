@@ -73,17 +73,30 @@
 
       <!--Блок галереи-->
       <div class="slider">
-        <div class="slider-title">Перфораторы</div>
-        <div class="slider-description">Настоящие мужские игрушки</div>
-        <div class="slider-content">
-          <ul>
-            <li>"Фото слайдера1"</li>
-            <!--<li>"Фото слайдера2"</li>-->
-          </ul>
+        <input type="radio" id="btn1" name="toggle" checked>
+        <input type="radio" id="btn2" name="toggle">
+        <div class="slide clearfix" id="slide1">
+          <button class="btn-slider-prew" type="button"></button>
+          <button class="btn-slider-next" type="button"></button>
+          <div class="slide-title">Перфораторы</div>
+          <div class="slide-description">Настоящие мужские игрушки</div>
+          <a class="btn open-catalog" href="#">Открыть каталог</a>
+          <div class="slider-controls">
+            <label for="btn1"></label>
+            <label for="btn2"></label>
+          </div>
         </div>
-        <!--<button class="btn-slider-prew" type="button"></button>
-        <button class="btn-slider-next" type="button"></button>-->
-        <a class="btn open-catalog" href="#">Открыть каталог</a>
+        <div class="slide clearfix" id="slide2">
+          <button class="btn-slider-prew" type="button"></button>
+          <button class="btn-slider-next" type="button"></button>
+          <div class="slide-title">Дрели</div>
+          <div class="slide-description">Соседям на радость!</div>
+          <a class="btn open-catalog" href="#">Открыть каталог</a>
+          <div class="slider-controls">
+            <label for="btn1"></label>
+            <label for="btn2"></label>
+          </div>
+        </div>
       </div>
       <div class="banners2 clearfix">
         <div class="banner banner-discounts">
@@ -199,12 +212,6 @@
           <p class="gallery-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
           <a class="btn-services" href="#">Отправить заявку</a>
         </div> -->
-        <figure class="gallery-footer">
-          <ul>
-            <li>"Фото слайдера1"</li>
-            <li>"Фото слайдера2"</li>
-          </ul>
-        </figure>
       </div>
     </div>
 

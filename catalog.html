@@ -18,7 +18,7 @@
             <a href="#"><img src="img/header-logo.png" width="220" height="42" alt="Интернет-магазин Техномарт"></a>
           </div>
           <div class="header-search">
-            <form action="/this" method="POST"><input type="text" placeholder="Поиск:"></form>
+            <form action="/this" method="POST"><input type="text" id="search" placeholder="Поиск:"></form>
           </div>
           <a class="header-btn favorites-btn favorites-btn-active" href="#">Закладки: 0</a>
           <a class="header-btn basket-btn-active" href="#">Корзина: 10</a>
@@ -112,7 +112,7 @@
             <fieldset class="filter">
               <legend>Питание:</legend>
               <div class="filter-radio">
-                <input type="radio" id="rd1" name="group-product-item" value="Accumultor"><label for="rd1">Аккумуляторные</label>
+                <input type="radio" id="rd1" name="group-product-item" value="Accumultor" checked=""><label for="rd1">Аккумуляторные</label>
               </div>
               <div class="filter-radio">
                 <input type="radio" id="rd2" name="group-product-item" value="Electric"><label for="rd2">Сетевые</label>
@@ -133,7 +133,7 @@
             <li class="sorting"><a href="#">По функционалу</a></li>
           </ul>
           <div class="sorting-arrows">
-            <a class="arrow arrow-up arrow-active" href="#"></a>
+            <a class="arrow arrow-up" href="#"></a>
             <a class="arrow arrow-down" href="#"></a>
           </div>
         </div>
