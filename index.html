@@ -196,22 +196,22 @@
           <a class="btn-guarantee" href="#">Гарантия</a>
           <a class="btn-credit" href="#">Кредит</a>
         </div>
-        <div class="services-delivery">
+        <div class="services-delivery1">
           <div class="title-service">Доставка</div>
           <p class="gallery-text">Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно!<br>
           Ведь мы не плохо заработаем, <br>поднимая его на ваш этаж!</p>
         </div>
-        <!--<div class="services-delivery">
+        <div class="services-delivery2">
           <div class="title-service">Гарантия</div>
-          <p class="gallery-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
-          спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
-          товар на новый. Дом уж восстановите как-нибудь сами.</p>
+          <p class="gallery-text">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара,
+          спровоцированного его возгаранием, <br>вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>сгоревший
+          товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
         </div>
-        <div class="services-delivery">
+        <div class="services-delivery3">
           <div class="title-service">Кредит</div>
-          <p class="gallery-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-          <a class="btn-services" href="#">Отправить заявку</a>
-        </div> -->
+          <p class="gallery-text">Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
+          <a class="btn-submit" href="#">Отправить заявку</a>
+        </div>
       </div>
     </div>
 
@@ -296,10 +296,10 @@
     </footer>
 
     <!--Popup-->
-    <div class="popup">
+    <div class="popup-login">
       <form class="index-popup" action="/this" method="POST">
-        <div class="icon-close"></div>
-        <div class="contacts">
+        <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
+        <div class="user-contacts clearfix">
           <div class="contact-name">
             <label for="name">Ваше имя:</label>
             <input type="text" id="name" placeholder="Представьтесь, пожалуйста">
@@ -313,7 +313,22 @@
             <textarea id="textarea" placeholder="В свободной форме" rows="1" cols="52"></textarea>
           </div>
         </div>
-        <button type="submit" name="send-form" class="send-form" value="send">Отправить</button>
+        <div class="send-contacts">
+          <button type="submit" name="send-form" class="send-form" value="send">Отправить</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="popup-basket">
+      <form class="index-popup" action="/this" method="POST">
+        <div class="icon-close"></div>
+        <div class="form-title">
+          <p class="text-popup">Товар добавлен в корзину!</p>
+        </div>
+        <div class="popup-bottom">
+          <a class="get-item" href="#">Оформить заказ</a>
+          <a class="cancel-popup" href="#">Продолжить покупки</a>
+        </div>
       </form>
     </div>
   </body>
