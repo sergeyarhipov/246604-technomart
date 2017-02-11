@@ -1781,7 +1781,7 @@ background-color: #161d29;
   line-height: 18px;
 }
 
-.popup-login {
+.popup-send {
   display: none;
   position: fixed;
   top: 15%; left:0; right: 0;
@@ -1901,6 +1901,7 @@ background-color: #161d29;
 .popup-basket {
   display: none;
   position: fixed;
+  z-index: 3;
   top: 25%; left:0; right: 0;
   margin: auto;
   width: 620px;
@@ -1913,6 +1914,10 @@ background-color: #161d29;
   -webkit-box-shadow: 0 20px 40px rgba(41,52,73,.75);
 	-moz-box-shadow: 0 20px 40px rgba(41,52,73,.75);
 	box-shadow: 0 20px 40px rgba(41,52,73,.75);
+}
+
+.popup-basket-show {
+  display: block;
 }
 
 .form-title {
