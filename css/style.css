@@ -85,7 +85,7 @@ a {
 .clearfix::after {
   content: "";
   display: table;
-  clear: both;;
+  clear: both;
 }
 
 .site-logo {
@@ -93,8 +93,6 @@ a {
   width: 220px;
   height: 42px;
   background-color: #ee3643;
-	-webkit-box-shadow: 0 5px #b52933;
-	-moz-box-shadow: 0 5px #b52933;
 	box-shadow: 0 5px #b52933;
 }
 
@@ -195,11 +193,11 @@ a {
   padding-left: 17px;
 }
 
-.basket-btn::before {
+.basket-btn-active::before, .basket-btn::before {
   content: "";
   position: absolute;
   top: 13px;
-  left: 17px;
+  left: 15px;
   width: 17px;
   height: 16px;
   background: transparent url("../img/sprite.png") no-repeat;
@@ -253,18 +251,6 @@ background-color: #161d29;
 
 .basket-btn-active:active {
   background-color: #ba2732;
-}
-
-.basket-btn-active::before {
-  content: "";
-  position: absolute;
-  top: 13px;
-  left: 15px;
-  width: 17px;
-  height: 16px;
-  background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -10px -317px;
-  opacity: 0.3;
 }
 
 .basket-btn-active:hover::before {
@@ -814,8 +800,6 @@ background-color: #161d29;
 }
 
 .popular-item:hover {
-  -webkit-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-  -moz-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
@@ -900,15 +884,11 @@ background-color: #161d29;
 }
 
 .supplier:hover {
-  -webkit-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-	-moz-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .supplier:active {
   opacity: 0.5;
-  -webkit-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
-  -moz-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
   box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
 
@@ -976,8 +956,6 @@ background-color: #161d29;
   line-height: 30px;
   color: #fff;
   background-color: #32425c;
-  -webkit-box-shadow: inset 0 -1px #293449;
-  -moz-box-shadow: inset 0 -1px #293449;
   box-shadow: inset 0 -1px #293449;
 }
 
@@ -988,8 +966,6 @@ background-color: #161d29;
 .btn-services-active {
   color: #32425c;
   background-color: #fff;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 
@@ -1488,8 +1464,6 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
 }
 
 .item:hover {
-  -webkit-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-  -moz-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
@@ -1665,8 +1639,6 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
   width: 220px;
   height: 60px;
   background-color: #ee3643;
-  -webkit-box-shadow: 0 5px #b52933;
-  -moz-box-shadow: 0 5px #b52933;
   box-shadow: 0 5px #b52933;
 }
 
@@ -1863,14 +1835,13 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
   overflow: hidden;
   background-color: #fff;
   border-top: 7px solid #ee3643;
-  -webkit-box-shadow: 0 20px 40px rgba(41,52,73,.75);
-	-moz-box-shadow: 0 20px 40px rgba(41,52,73,.75);
 	box-shadow: 0 20px 40px rgba(41,52,73,.75);
 }
 
 .popup-send-show {
   display: block;
-  animation: 0.6s;
+  -webkit-animation: 0.6s;
+          animation: 0.6s;
 }
 
 .popup-close {
@@ -1899,11 +1870,13 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
 }
 
 .popup-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .popup-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .user-contacts {
@@ -1987,14 +1960,13 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
   overflow: hidden;
   background-color: #fff;
   border-top: 7px solid #ee3643;
-  -webkit-box-shadow: 0 20px 40px rgba(41,52,73,.75);
-	-moz-box-shadow: 0 20px 40px rgba(41,52,73,.75);
 	box-shadow: 0 20px 40px rgba(41,52,73,.75);
 }
 
 .popup-basket-show {
   display: block;
-  animation: 0.6s;
+  -webkit-animation: 0.6s;
+          animation: 0.6s;
 }
 
 .form-title {
@@ -2080,14 +2052,13 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
   margin-left: -470px;
   background-color: #444;
   background-image: url("../img/map.jpg");
-  -webkit-box-shadow: 0 0 15px 1px rgba(35, 31, 32, 0.5);
-	-moz-box-shadow: 0 0 15px 1px rgba(35, 31, 32, 0.5);
 	box-shadow: 0 0 15px 1px rgba(35, 31, 32, 0.5);
 }
 
 .popup-map-show {
   display: block;
-  animation: 0.6s;
+  -webkit-animation: 0.6s;
+          animation: 0.6s;
 }
 
 .map-close {
@@ -2115,40 +2086,84 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
 }
 
 .map-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .map-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .popup-open {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
+}
+
+@-webkit-keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70%  {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   90%  {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
