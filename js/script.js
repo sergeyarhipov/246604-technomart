@@ -26,6 +26,33 @@ window.addEventListener("keydown", function(event) {
 });
 
 
+var btnMap = document.querySelector(".contacts-img");
+var map = document.querySelector(".popup-map");
+var closeMap = document.querySelector(".map-close");
+
+btnMap.addEventListener("click", function(event) {
+  event.preventDefault();
+  map.classList.add("popup-map-show");
+  map.classList.add("popup-open");
+});
+
+closeMap.addEventListener("click", function(event) {
+  event.preventDefault();
+  map.classList.remove("popup-map-show");
+  map.classList.remove("popup-open");
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (map.classList.contains("popup-map-show")) {
+      map.classList.remove("popup-map-show");
+      map.classList.remove("popup-map-show");
+    }
+  }
+});
+
+
+
 var btnSend = document.querySelector(".btn-map");
 var send = document.querySelector(".popup-send");
 var closeSend = document.querySelector(".popup-close");
@@ -62,11 +89,6 @@ closeSend.addEventListener("click", function(event) {
   event.preventDefault();
   send.classList.remove("popup-send-show");
   send.classList.remove("popup-open");
-});
-
-closeBasket.addEventListener("click", function(event) {
-  event.preventDefault();
-  basket.classList.remove("popup-basket-show");
 });
 
 window.addEventListener("keydown", function(event) {

@@ -12,7 +12,8 @@ a {
 
 .item-name {
   display: inline-block;
-  width:165px;
+  vertical-align: top;
+  width: 165px;
   margin: 0 0 12px 0;
   font-size: 18px;
   line-height: 20px;
@@ -539,17 +540,53 @@ background-color: #161d29;
 }
 
 .banner-materials {
-  background: #f6b22d url(../img/icon-promo-materials.png) no-repeat right 41px center;
+  position: relative;
+  background-color: #f6b22d;
+}
+
+.banner-materials::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 43px;
+  width: 44px;
+  height: 65px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -1803px;
 }
 
 .banner-instruments {
+  position: relative;
   margin-left: 0;
-  background: #4aafde url(../img/icon-promo-instruments.png) no-repeat right 28px center;
+  background-color: #4aafde;
+}
+
+.banner-instruments::before {
+  content: "";
+  position: absolute;
+  top: 33px;
+  right: 29px;
+  width: 75px;
+  height: 61px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -1722px;
 }
 
 .banner-construction {
+  position: relative;
   margin-right: 0;
-  background: #cc79d1 url(../img/icon-promo-construction.png) no-repeat right 30px center;
+  background-color: #cc79d1;
+}
+
+.banner-construction::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  right: 30px;
+  width: 78px;
+  height: 62px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -1465px;
 }
 
 .promo-title {
@@ -586,8 +623,6 @@ background-color: #161d29;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-
-
 .slider {
   float: left;
   position: relative;
@@ -598,14 +633,38 @@ background-color: #161d29;
 }
 
 .banner-discounts {
+  position: relative;
   margin-right: 0;
   margin-bottom: 22px;
-  background: #85d179 url(../img/icon-promo-discaunts.png) no-repeat right 44px center;;
+  background-color: #85d179;
+}
+
+.banner-discounts::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: 45px;
+  width: 59px;
+  height: 72px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -1630px;
 }
 
 .banner-delivery {
+  position: relative;
   margin-right: 0;
-  background: #f6b22d url(../img/icon-promo-delivery.png) no-repeat right 30px center;;
+  background-color: #f6b22d;
+}
+
+.banner-delivery::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 30px;
+  width: 78px;
+  height: 63px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -1547px;
 }
 
 .slide {
@@ -1034,7 +1093,7 @@ background-color: #161d29;
   border-radius: 5px;
 }
 
-.contacts img {
+.contacts-img {
   margin-bottom: 30px;
 }
 
@@ -1504,13 +1563,15 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
   display: block;
   width: 141px;
   margin: 0 auto;
+  margin-bottom: 21px;
   padding: 10px 0 10px 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 18px;
   color: #fff;
-  background-image: url(../img/sale-price.png);
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -1888px;
 }
 
 .catalog-result {
@@ -1531,7 +1592,7 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
   list-style: none;
 }
 
-.active-pagination {
+.pagination .active-pagination {
   padding: 10px 15px 10px 15px;
   border: 0;
   color: #fff;
@@ -1600,9 +1661,9 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
 
 .footer-logo {
   float: left;
-  margin-bottom: 10px;
-  width: 215px;
-  height: 70px;
+  margin-bottom: 20px;
+  width: 220px;
+  height: 60px;
   background-color: #ee3643;
   -webkit-box-shadow: 0 5px #b52933;
   -moz-box-shadow: 0 5px #b52933;
@@ -1722,9 +1783,12 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
 
 .social-btn {
   display: inline-block;
+  position: relative;
+  vertical-align: middle;
   width: 42px;
   height: 42px;
   margin-right: 4px;
+  margin-bottom: 4px;
   background-color: #212a3a;
   border-radius: 50%;
 }
@@ -1751,8 +1815,8 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
 .social-btn-fb::before {
   content: "";
   position: absolute;
-  top: 11px;
-  left: 62px;
+  top: 12px;
+  left: 15px;
   width: 10px;
   height: 18px;
   background: transparent url("../img/sprite.png") no-repeat;
@@ -1763,7 +1827,7 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
   content: "";
   position: absolute;
   top: 12px;
-  left: 105px;
+  left: 13px;
   width: 17px;
   height: 17px;
   background: transparent url("../img/sprite.png") no-repeat;
@@ -1992,6 +2056,7 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
 
 .get-item, .cancel-popup {
   display: inline-block;
+  vertical-align: middle;
   width: 220px;
   margin-top: 37px;
   margin-bottom: 37px;
@@ -2001,6 +2066,60 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
+}
+
+.popup-map {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  width: 940px;
+  height: 446px;
+  margin-top: -223px;
+  margin-left: -470px;
+  background-color: #444;
+  background-image: url("../img/map.jpg");
+  -webkit-box-shadow: 0 0 15px 1px rgba(35, 31, 32, 0.5);
+	-moz-box-shadow: 0 0 15px 1px rgba(35, 31, 32, 0.5);
+	box-shadow: 0 0 15px 1px rgba(35, 31, 32, 0.5);
+}
+
+.popup-map-show {
+  display: block;
+  animation: 0.6s;
+}
+
+.map-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.map-close::before,
+.map-close::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #ee3643;
+  border-radius: 1px;
+}
+
+.map-close::before {
+  transform: rotate(45deg);
+}
+
+.map-close::after {
+  transform: rotate(-45deg);
 }
 
 .popup-open {
