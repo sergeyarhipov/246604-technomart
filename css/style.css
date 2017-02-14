@@ -2055,6 +2055,10 @@ li:nth-child(3) .link-sorting:hover, li:nth-child(4) .link-sorting:hover{
 	box-shadow: 0 0 15px 1px rgba(35, 31, 32, 0.5);
 }
 
+.popup-map iframe {
+  border: none;
+}
+
 .popup-map-show {
   display: block;
   -webkit-animation: 0.6s;
