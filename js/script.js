@@ -99,3 +99,97 @@ window.addEventListener("keydown", function(event) {
     }
   }
 });
+
+var btnDelivery = document.querySelector(".btn-delivery");
+var btnGuarantee = document.querySelector(".btn-guarantee");
+var btnCredit = document.querySelector(".btn-credit");
+var servicesDelivery1 = document.querySelector(".services-delivery1");
+var servicesDelivery2 = document.querySelector(".services-delivery2");
+var servicesDelivery3 = document.querySelector(".services-delivery3");
+
+btnDelivery.addEventListener("click", function(event) {
+  event.preventDefault();
+
+  if (btnGuarantee.classList.contains("btn-services-active")) {
+    btnGuarantee.classList.remove("btn-services-active");
+    btnGuarantee.classList.add("btn-not-active");
+  }
+
+  if (btnCredit.classList.contains("btn-services-active")) {
+    btnCredit.classList.remove("btn-services-active");
+    btnCredit.classList.add("btn-not-active");
+  }
+
+  if (servicesDelivery2.classList.contains("services-show")) {
+    servicesDelivery2.classList.remove("services-show");
+    servicesDelivery2.classList.add("services-not-show");
+  }
+
+  if (servicesDelivery3.classList.contains("services-show")) {
+    servicesDelivery3.classList.remove("services-show");
+    servicesDelivery3.classList.add("services-not-show");
+  }
+
+  btnDelivery.classList.remove("btn-not-active");
+  btnDelivery.classList.add("btn-services-active");
+  servicesDelivery1.classList.remove("services-not-show");
+  servicesDelivery1.classList.add("services-show");
+});
+
+btnGuarantee.addEventListener("click", function(event) {
+  event.preventDefault();
+
+  if (btnDelivery.classList.contains("btn-services-active")) {
+    btnDelivery.classList.remove("btn-services-active");
+    btnDelivery.classList.add("btn-not-active");
+  }
+
+  if (btnCredit.classList.contains("btn-services-active")) {
+    btnCredit.classList.remove("btn-services-active");
+    btnCredit.classList.add("btn-not-active");
+  }
+
+  if (servicesDelivery1.classList.contains("services-show")) {
+    servicesDelivery1.classList.remove("services-show");
+    servicesDelivery1.classList.add("services-not-show");
+  }
+
+  if (servicesDelivery3.classList.contains("services-show")) {
+    servicesDelivery3.classList.remove("services-show");
+    servicesDelivery3.classList.add("services-not-show");
+  }
+
+  btnGuarantee.classList.remove("btn-not-active");
+  btnGuarantee.classList.add("btn-services-active");
+  servicesDelivery2.classList.remove("services-not-show");
+  servicesDelivery2.classList.add("services-show");
+});
+
+btnCredit.addEventListener("click", function(event) {
+  event.preventDefault();
+
+  if (btnDelivery.classList.contains("btn-services-active")) {
+    btnDelivery.classList.remove("btn-services-active");
+    btnDelivery.classList.add("btn-not-active");
+  }
+
+  if (btnGuarantee.classList.contains("btn-services-active")) {
+    btnGuarantee.classList.remove("btn-services-active");
+    btnGuarantee.classList.add("btn-not-active");
+  }
+
+  if (servicesDelivery1.classList.contains("services-show")) {
+    servicesDelivery1.classList.remove("services-show");
+    servicesDelivery1.classList.add("services-not-show");
+  }
+
+  if (servicesDelivery2.classList.contains("services-show")) {
+    servicesDelivery2.classList.remove("services-show");
+    servicesDelivery2.classList.add("services-not-show");
+  }
+
+  btnCredit.classList.remove("btn-not-active");
+  btnCredit.classList.add("btn-services-active");
+  servicesDelivery3.classList.remove("services-not-show");
+  servicesDelivery3.classList.add("services-show");
+});
